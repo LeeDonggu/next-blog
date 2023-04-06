@@ -5,7 +5,6 @@ import {
   type DefaultSession,
 } from "next-auth";
 import GitHubProvider from "next-auth/providers/github";
-import KakaoProvider from "next-auth/providers/kakao";
 
 import { PrismaAdapter } from "@next-auth/prisma-adapter";
 import { env } from "~/env.mjs";
@@ -49,10 +48,6 @@ export const authOptions: NextAuthOptions = {
   },
   adapter: PrismaAdapter(prisma),
   providers: [
-    KakaoProvider({
-      clientId: env.KAKAO_CLIENT_ID,
-      clientSecret: env.KAKAO_CLIENT_SECRET,
-    }),
     GitHubProvider({
       clientId: env.GITHUB_ID,
       clientSecret: env.GITHUB_SECRET,
