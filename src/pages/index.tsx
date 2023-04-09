@@ -43,6 +43,24 @@ const Home: NextPage = () => {
                 to deploy it.
               </div>
             </Link>
+            <Link
+              className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
+              href="/tempTest"
+            >
+              <h3 className="text-2xl font-bold">TempTest →</h3>
+              <div className="text-lg">
+                임시 테스트 페이지를 추가해보았습니다.
+              </div>
+            </Link>
+            <Link
+              className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
+              href="/test404"
+            >
+              <h3 className="text-2xl font-bold">404 Page →</h3>
+              <div className="text-lg">
+                404 TEST LINK
+              </div>
+            </Link>
           </div>
           <div className="flex flex-col items-center gap-2">
             <p className="text-2xl text-white">
