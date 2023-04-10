@@ -1,8 +1,8 @@
-interface Box404Props {
+interface BoxItemProps {
   text: string
 }
 
-const BoxItem = ({ text }: Box404Props) => {
+const BoxItem = ({ text }: BoxItemProps) => {
   return (
     <div className="w-full h-full bg-white rounded-md">
       <p className="text-black">{text}</p>
