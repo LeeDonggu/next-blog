@@ -11,7 +11,7 @@ const AuthShowcase: React.FC = () => {
 
   return (
     <button
-      className="rounded-full px-4 font-semibold text-white bg-[#121212] no-underline transition dark:bg-[#F1F3F5] dark:text-[#121212]"
+      className="rounded-full px-4 font-semibold text-white dark:text-dark-900 bg-dark-900 dark:bg-ligth-100 no-underline transition"
       onClick={sessionData ? () => void signOut() : () => void signIn()}
     >
       {sessionData ? 'Sign out' : 'Sign in'}
